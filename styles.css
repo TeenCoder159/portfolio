@@ -1,0 +1,101 @@
+:root{
+    --pri-clr: #27445D;
+    --sec-clr: #497D74;
+    --ter-clr: #71BBB2;
+    --contrast-clr: #EFE9D5;
+    --contrast-alt: #FF6500;
+    --background-one: #0B192C;
+    --background-two: #1E3E62;
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    z-index: -1;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: var(--contrast-alt);
+}
+
+.main{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#pfp{
+    width: 100px;
+    
+}
+
+.lang-card {
+    width: 310px;
+    height: 254px;
+    border-radius: 4px;
+    background: transparent;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+.lang-card p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: transparent;
+    border: 1px solid var(--contrast-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.lang-card p:hover {
+    flex: 4;
+  }
+  
+.lang-card p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: var(--contrast-clr);
+    letter-spacing: .1em;
+  }
+  
+.lang-card p:hover span {
+    transform: rotate(0);
+  }
