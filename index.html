@@ -1,33 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umang Surana</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="bg"></div>
-    <div class="main">
-        <img id="pfp" src="media/pfp.jpg">
-        <div class="details">
-            <h1>I am Umang Surana</h1>
-        </div>
-        
-    </div>
-    <div class="lang">
-        <h3>I code in:</h3>
-        <div class="lang-card">
-            
-            <p><span>HTML</span></p>
-            <p><span>CSS</span></p>
-            <p><span>Rust</span></p>
-            <p><span>Python</span></p>
-        </div>
-    </div>
-    <div class="about">
-        
-    </div>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Umang Surana | Developer & Designer</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">US</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Umang Surana</span></h1>
+                    <h2>Developer, Designer & Aspiring Entrepreneur</h2>
+                    <p>
+                        I'm a student at NYP studying Applied AI and Analytics
+                        with a passion for building digital solutions and
+                        creating visually appealing designs.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn"
+                            >View My Work</a
+                        >
+                        <a href="#contact" class="btn secondary-btn"
+                            >Get In Touch</a
+                        >
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="media/pfp.jpg" alt="Umang Surana" />
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Development</h3>
+                    <div class="skill-group">
+                        <div class="skill-item">
+                            <i class="fab fa-rust"></i>
+                            <span>Rust</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Media</h3>
+                    <div class="skill-group">
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Graphic Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-car"></i>
+                            <span>Car Posters</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-video"></i>
+                            <span>Video Editing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img
+                            src="media/WebbedLogo.png"
+                            alt="Webbed Agency"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Webbed'"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Webbed</h3>
+                        <p>
+                            My own website development agency focusing on
+                            creating professional web solutions for businesses.
+                        </p>
+                        <div class="project-tags">
+                            <span>Web Development</span>
+                            <span>Business</span>
+                        </div>
+                        <a
+                            href="https://pro-webbed.github.io/webbed/index.html"
+                            class="btn small-btn"
+                            target="_blank"
+                            >Visit Site</a
+                        >
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img
+                            src="media/wheel-dreamers.png"
+                            alt="Wheel Dreamers"
+                            onerror="this.src='https://via.placeholder.com/400x250?text=Wheel+Dreamers'"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Wheel Dreamers</h3>
+                        <p>
+                            My creative outlet for car posters and automotive
+                            design showcased on Instagram.
+                        </p>
+                        <div class="project-tags">
+                            <span>Graphic Design</span>
+                            <span>Automotive</span>
+                        </div>
+                        <a
+                            href="https://instagram.com/wheel.dreamers/"
+                            class="btn small-btn"
+                            target="_blank"
+                            >Visit Instagram</a
+                        >
+                    </div>
+                </div>
+
+                <!-- New Projects -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img
+                            src="media/Lion-cli-icon.png"
+                            alt="Lion Programming Language"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Lion-cli</h3>
+                        <p>
+                            A CLI tool for developers that combines different
+                            commands used for running and compiling different
+                            languages such as python, Rust, Golang, Java, C, C++
+                            and Typescript. It aims to make developers lives
+                            easier and has more than 5 thousand downloads on
+                            crates.io
+                        </p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Dev tool</span>
+                        </div>
+                        <a
+                            href="https://github.com/TeenCoder159/lion"
+                            class="btn small-btn"
+                            target="_blank"
+                            >GitHub Repo</a
+                        >
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img
+                            src="media/Setter-icon.png"
+                            alt="Setter Framework"
+                        />
+                    </div>
+                    <div class="project-details">
+                        <h3>Setter Framework</h3>
+                        <p>
+                            A Rust library designed to make reading and writing
+                            settings in toml files much more easier and not
+                            having to use complex functions / seriazlisation
+                            libraries such as serde
+                        </p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Library</span>
+                        </div>
+                        <a
+                            href="https://github.com/TeenCoder159/setter"
+                            class="btn small-btn"
+                            target="_blank"
+                            >GitHub Repo</a
+                        >
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/Oxid-icon.png" alt="Oxid Database" />
+                    </div>
+                    <div class="project-details">
+                        <h3>Oxid</h3>
+                        <p>
+                            A simple login/signup program via the terminal that
+                            I made early in my developing career. It features
+                            the usage of cryptographic functions such as argon2
+                            and bcrypt and stores the password and username as
+                            files
+                        </p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Cryptography</span>
+                        </div>
+                        <a
+                            href="https://github.com/TeenCoder159/oxid"
+                            class="btn small-btn"
+                            target="_blank"
+                            >GitHub Repo</a
+                        >
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/NYPIcon.jpg" alt="NYP Discord Bot" />
+                    </div>
+                    <div class="project-details">
+                        <h3>NYP School of IT Discord Bot</h3>
+                        <p>
+                            A Discord bot developed for NYP School of IT using
+                            Rust with the Serenity and Poise frameworks to
+                            enhance student interaction.
+                        </p>
+                        <div class="project-tags">
+                            <span>Rust</span>
+                            <span>Discord API</span>
+                            <span>Serenity</span>
+                            <span>Poise</span>
+                        </div>
+                        <a
+                            href="https://github.com/TeenCoder159/nyp-discord-bot"
+                            class="btn small-btn"
+                            target="_blank"
+                            >GitHub Repo</a
+                        >
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="media/BypassDMA-icon.png" alt="Bypass DMA" />
+                    </div>
+                    <div class="project-details">
+                        <h3>BypassDMA</h3>
+                        <p>
+                            A website demonstrating the iframe vulnerability in
+                            the Mobile Guardian extension, showcasing real-world
+                            security research.
+                        </p>
+                        <div class="project-tags">
+                            <span>Security Research</span>
+                            <span>Web Security</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <a
+                            href="https://github.com/TeenCoder159/BypassDMA"
+                            class="btn small-btn"
+                            target="_blank"
+                            >GitHub Repo</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a student at Nanyang Polytechnic studying Applied
+                        AI and Analytics. With a passion for technology and
+                        business, I'm constantly working on expanding my skills
+                        and knowledge.
+                    </p>
+                    <p>
+                        Besides coding in Rust, Python, HTML, CSS, and
+                        JavaScript, I also enjoy graphic design with a
+                        particular focus on creating automotive posters. My
+                        entrepreneurial mindset drives me to explore
+                        opportunities in SaaS development.
+                    </p>
+                    <p>
+                        My goal is to combine my technical skills and creative
+                        abilities to build innovative digital solutions that
+                        solve real-world problems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="social-links">
+                    <a
+                        href="https://instagram.com/wheel.dreamers/"
+                        target="_blank"
+                        class="social-item"
+                    >
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:no1umang@gmail.com" class="social-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a
+                        href="https://github.com/teencoder159"
+                        target="_blank"
+                        class="social-item"
+                    >
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/umang-surana-a109402a6/"
+                        target="_blank"
+                        class="social-item"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Umang Surana. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
